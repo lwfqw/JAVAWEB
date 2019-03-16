@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link type="text/css"  rel="stylesheet"  href="css/style.css">
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+    list-style:none;
+	}
+.wrap{
+	height:270px;
+	width:600px;
+	margin-left:25px;
+	overflow: hidden;
+	position: relative;
+	margin-top:10px;
+	}
+.wrap ul{
+	position:absolute;
+	} 
+.wrap ul li{
+	height:270px;
+	}
+.wrap ol{
+	position:absolute;
+	right:5px;
+	bottom:10px;
+	}
+.wrap ol li{
+	height:20px; 
+	width: 20px;
+	background:#ccc;
+	border:solid 1px #666;
+	margin-left:5px;
+	color:#000;
+	float:left;
+	line-height:center;
+	text-align:center;
+	cursor:pointer;
+	}
+.wrap ol .on{
+	background:
+	#E97305;
+	color:#fff;
+	}
+ 
+</style>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script type="text/javascript">
+ window.onload=function(){
+ var wrap=document.getElementById('wrap'),
+ pic=document.getElementById('pic').getElementsByTagName("li"),
+ list=document.getElementById('list').getElementsByTagName('li'),
+ index=0,
+ timer=null;
+
+ timer = setInterval(autoPlay, 2000);
+
+ wrap.onmouseover = function () {
+ clearInterval(timer);
+ }
+
+ wrap.onmouseout = function () {
+ timer = setInterval(autoPlay, 2000);
+ }
+
+ for (var i = 0; i < list.length; i++) {
+ list[i].onmouseover = function () {
+ clearInterval(timer);
+ index = this.innerText - 1;
+ changePic(index);
+ };
+ };
+ 
+ function autoPlay () {
+ if (++index >= pic.length) index = 0;
+ changePic(index);
+ }
+ 
+
+ function changePic (curIndex) {
+ for (var i = 0; i < pic.length; ++i) {
+ pic[i].style.display = "none";
+ list[i].className = "";
+ }
+ pic[curIndex].style.display = "block";
+ list[curIndex].className = "on";
+ }
+ 
+ };
+ 
+ </script> 
+</head>
+<body>
+<!-头部区域 水平导航条->
+<div class="top">
+	<!-水平导航条->
+	<ul class="nav">
+		<li class="nav_list"><a id="a1" class="on" href="index.html">首&nbsp;&nbsp;页</a></li>
+		<li class="nav_list"><a id="a1" href="Fitness contrast.html">对比照展示</a></li>
+		<li class="nav_list"><a id="a1" href="contact.html">联系我们</a></li>
+       
+        <div id="login"><li class="nav_list"><a id="a1" href="login.html">登录</a></li></div>
+        <div id="register"><li class="nav_list"><a id="a1" href="register.html">注册</a></li></div>
+	</ul>
+</div>
+
+<!-左部内容区域  垂直导航条 图片 链接->
+<div class="content_left">
+
+<!-垂直导航条->
+<div class="left_nav" align="center">
+  <ul id="MenuBar1" class="MenuBarVertical">
+    <li><a id="a2"class="MenuBarItemSubmenu.html" href="#">力量训练</a>
+      <ul>
+        <li><a id="a2" href="shendun.html">深蹲</a></li>
+        <li><a id="a2" href="yingla.html">硬拉</a></li>
+        <li><a id="a2" href="wuotui.html">卧推</a></li>
+      </ul>
+    </li>
+    <li><a id="a2" href="yingyangbuchong.html">营养补充</a></li>
+    <li><a id="a2" class="MenuBarItemSubmenu.html" href="#">训练计划</a>
+      <ul>
+        <li><a id="a2" class="MenuBarItemSubmenu.html" href="#">胸部训练</a>
+          <ul>
+            <li><a id="a2" href="shangxiong.html">上胸</a></li>
+            <li><a id="a2" href="xiaxiong.html">下胸</a></li>
+          </ul>
+        </li>
+        <li><a id="a2" href="beibuxunlian.html">背部训练</a></li>
+        <li><a id="a2" href="tuibuxunlian.html">腿部训练</a></li>
+      </ul>
+    </li>
+    <li><a id="a2" href="#">~</a></li>
+  </ul>
+  </div>
+  
+  <!-图片->
+  <div class="left_img">
+  	<img src="images/idea1.jpg" alt="图文设计" style="width:180px;height:180px; display:block; margin-top:25px; margin-left:50px">
+  </div>
+  
+  <!-链接->
+  <div id="left_bottom" style="margin-top:15px;margin-left:75px"></div>
+</div>
+
+
+<!-中间内容部分->
+
+<div class="content">
+<h1><font size="30" color="red">1、延缓衰老</font></h1>
+
+所谓人老腿先老，深蹲可以有效的锻炼腿部肌肉，能显著的降低男人衰老的速度，进而就会促进你身体的新陈代谢，恐怕很少有人知道它的这个好处吧，另外深蹲本身是运动的一种运动本身对人体有很多的好处，据说很多喜欢练深蹲的男人，到了60岁依然和年轻人一样，身子骨依然很硬朗，因为深蹲运动可以有效的锻炼人的肌肉能力，平衡性和协调性，从而减少衰老的可能性
+<img src="images/u=1159096817,2329968534&fm=173&app=25&f=JPEG.jfif">
+<h1><font size="30" color="red">2、性能力提高了</font></h1>
+男人练习深蹲还可以有效的提高男人的性能力，深蹲的过程中能够有效锻炼强化括约肌、女性私处控制肌肉等位置的肌肉群，也有利于提高性能力。促进身体分泌雄性激素，众所周知雄激素是维持男性特征的一个重要的因素，男人练习深蹲还可以促进睾酮处的健康，有很多在办公室里的男人来说，这无疑是一个非常好的运动，也不需要多大的场地，时不时的锻炼一下，可以有效的提高自己的性能力
+<img src="images/u=2807209848,2758129196&fm=173&app=25&f=JPEG.jfif">
+<h1><font size="30" color="red">3、心肺功能提高了</font></h1>
+坚持练深蹲的话，你会发现自己的心肺功能提高了，大腿肌肉的发达程度与肺活量和心脏功能成正比，因为你深蹲的过程中需要的肺活量非常的大，长此以往你会发现你的肺活量提高了，但是要注意方式方法，不要伤到膝盖，在练习的过程中，需要保持均匀的呼吸，练习深蹲，在锻炼大腿肌肉的同时，对提高心脏功能也有明显作用。
+</pre>
+</body>
+
+<!-右部内容区域 搜索部分 推送的新闻 文章标题 推送的文章->
+<div class="content_right">
+
+<!-搜索部分->
+<div id="right_search">
+	<input type="text" name="searchText" placeholder="别说话  搜我"/>
+    <input type="button" name="searchBtn"  value="     " style="background:url(images/idea3.PNG)" />
+</div>
+
+
+<!- 推送部分->
+<div id="right_article">
+
+	<!-文章标题部分->
+	<div id="article_head">
+    	<p style="display:block; margin-top:5px; margin-left:10px;">
+       		<font color="#FF6600" face="Tahoma, Geneva, sans-serif">健身小知识</font>
+        </p>
+    </div>
+    
+    <!-推送的文章->
+     <div id="article">
+    	<ul id="article_list">
+        	<li id="article_li"><font color="#000000"><a href="shendundehaochu.html">深蹲的好处有哪些？</a></font></li>
+            <li id="article_li"><font color="#000000"><a href="youyang.html">有氧和无氧的区别</a></font></li>
+            <li id="article_li"><font color="#000000"><a href="jianshenyingyangxue.html">健身营养学</a></font></li>
+            <li id="article_li"><font color="#000000">肌肉解刨学</font></li>
+            <li id="article_li"><font color="#000000">拉伸的重要性</font></li>
+        </ul>
+</div>
+
+</div>
+
+<div class="foot">
+	<div id="footer" align="center" style="margin-left:380px; margin-top:20px">
+	  <p class="foot_p" style="display:block; float:left; margin-top:10px; font-size: 10px; color: #999;">
+        &nbsp;&nbsp;&nbsp;&nbsp;网站内容来源于各大素材网站，最终解释权归网站管理员所有
+        </p>
+    </div>
+</div>
+<script type="text/javascript">
+	var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>
+

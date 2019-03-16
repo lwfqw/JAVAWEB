@@ -1,0 +1,139 @@
+/* CSS Document */
+<style type="text/css">
+*{
+	margin:0px;
+	padding:0px;
+	}
+.body{
+	background:#CCC;
+	}
+div{
+	float:left;
+	}
+.top,.content_left,.foot{
+	margin-left:16px;
+	}
+.top{
+	width:1300px;
+	height:100px;
+	}
+.content_left{
+	width:300px;
+	height:500px;
+	}
+.content{
+	margin-left:25px;
+	width:650px;
+	height:500px;	
+	}
+.content_right{
+	margin-left:25px;
+	width:300px;
+	height:500px;
+	}
+.foot{
+	width:1300px;
+	height:100px;
+	}
+	
+*{margin: 0px;padding: 0px; font-size: 16px; font:bolder;}
+#register{
+position:relative;
+float:right;
+width:120px;
+	}
+#login{
+	position:relative;
+	float:right;
+	width:120px;
+	}
+.nav{
+	list-style: none; 
+	height: 45px;
+	border-bottom: 5px solid orange; 
+	padding-left: 200px;
+	}
+.nav_list{
+	float: left;
+	margin-top: 20px; 
+	width:180px;
+	}
+#a1{
+	text-decoration: none;
+	display: block;
+	height:25px; 
+	line-height: 25px;
+	width: 120px;
+	margin-right: 2px;
+	text-align: center; 
+	background:url(../images/index.jpg); 
+	color: black;
+	}
+.on,#a1:hover{
+	color: white;
+	background-position: 0 -25px;
+	background-color: #FFF;
+	}
+.left_nav{
+	 margin-top:5px;
+	 margin-left:50px;
+	}
+#a2{
+	display:block;
+	margin-top:5px;
+	width:150px;
+	height:20px;
+	border: 2px solid #639;
+	background:#F60;
+	text-align:center;
+	}
+#right_search{
+	margin-top:10px;
+	margin-left:30px;
+	}
+#right_news{
+	margin-top:10px;
+	margin-left:20px;
+	}
+#article_head{
+	width:240px;
+	height:30px;
+	background:#CCC;
+	margin-top:10px;
+	margin-left:30px;
+	}
+.p1{
+	 display:block;
+	 width:20px;
+	 height:20px;
+	 background:#F60; 
+	 text-align:center;
+	 float:left;
+	}
+.p2{
+	margin-left:10px; 
+	text-align:center; 
+	float:left;
+	}
+#article{
+	margin-top:15px;
+	margin-left:50px;
+	}
+#article_li{
+	margin-top:5px;
+	color:#F60;
+	}
+#com_li{
+	display:block;
+	color:#F60;
+	margin-top:10px;
+	}
+</style>.top .nav .nav_list #a1 {
+	background-color: #666;
+}
+.content .both_link .both_p {
+	font-family: MS Serif, New York, serif;
+}
+.foot #footer .foot_p {
+	color: #999;
+}

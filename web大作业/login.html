@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link type="text/css"  rel="stylesheet"  href="css/style.css">
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+<body>
+<!-头部区域 水平导航条->
+<div class="top">
+	<!-水平导航条->
+	<ul class="nav">
+		<li class="nav_list"><a id="a1" class="on" href="index.html">首&nbsp;&nbsp;页</a></li>
+		<li class="nav_list"><a id="a1" href="Fitness contrast.html">对比照展示</a></li>
+		
+	  <li class="nav_list"><a id="a1" href="contact.html">联系我们</a></li>
+       
+        <div id="login"><li class="nav_list"><a id="a1" href="login.html">登录</a></li></div>
+        <div id="register"><li class="nav_list"><a id="a1" href="register.html">注册</a></li></div>
+	</ul>
+</div>
+
+<!-左部内容区域  垂直导航条 图片 链接->
+<div class="content_left">
+
+<!-垂直导航条->
+<div class="left_nav" align="center">
+  <ul id="MenuBar1" class="MenuBarVertical">
+    <li><a id="a2"class="MenuBarItemSubmenu.html" href="#">力量训练</a>
+      <ul>
+        <li><a id="a2" href="shendun.html">深蹲</a></li>
+        <li><a id="a2" href="yingla.html">硬拉</a></li>
+        <li><a id="a2" href="wuotui.html">卧推</a></li>
+      </ul>
+    </li>
+    <li><a id="a2" href="yingyangbuchong.html">营养补充</a></li>
+    <li><a id="a2" class="MenuBarItemSubmenu.html" href="#">训练计划</a>
+      <ul>
+        <li><a id="a2" class="MenuBarItemSubmenu.html" href="#">胸部训练</a>
+          <ul>
+            <li><a id="a2" href="shangxiong.html">上胸</a></li>
+            <li><a id="a2" href="xiaxiong.html">下胸</a></li>
+          </ul>
+        </li>
+        <li><a id="a2" href="beibuxunlian.html">背部训练</a></li>
+        <li><a id="a2" href="tuibuxunlian.html">腿部训练</a></li>
+      </ul>
+    </li>
+    <li><a id="a2" href="#">~</a></li>
+  </ul>
+  </div>
+  
+  <!-图片->
+  <div class="left_img">
+  	<img src="images/idea1.jpg" alt="图文设计" style="width:180px;height:180px; display:block; margin-top:25px; margin-left:50px">
+  </div>
+  
+  <!-链接->
+  <div id="left_bottom" style="margin-top:15px;margin-left:75px"></div>
+</div>
+
+<!-中间内容部分->
+<div class="content">
+	<!-图片链接->
+    <div class="image_link">
+    	<img src="images/无标题.png" width="492" height="115" style="margin-top:10px;margin-left:25px"/>
+    </div>
+    
+    <!-文字链接->
+    <div class="word_link" style="margin-left:25px;margin-top:10px">
+    	<h4><font style="color:#09F" face="Lucida Sans Unicode">登录页面</font></h4>
+    </div>
+    
+    <!-图文并茂->
+    <div class="both_link">
+      <p class="both_p" style="display:block; margin-top:10px; margin-left:25px;float:left;width:600px">
+       	  登陆后查看更多内容 还可以收藏和订阅您喜欢的内容
+        </p>
+    </div>
+    
+    <!-间隔区域->
+    <div class="space" style="margin-left:25px; margin-top:10px">
+    	<hr width="600px" style="border: 2px solid  #F60"/>
+    </div>
+    
+    <!-图文交叉区域->
+    <div class="commbination" style=" margin-top:10px; margin-left:25px">
+    	<div class="com_img"></div>
+    </div>
+</div>
+
+
+<!-右部内容区域 搜索部分 推送的新闻 文章标题 推送的文章->
+<div class="content_right">
+
+<!-搜索部分->
+<div id="right_search">
+	<input type="text" name="searchText" placeholder="别说话  搜我"/>
+    <input type="button" name="searchBtn"  value="     " style="background:url(images/idea3.PNG)" />
+</div>
+
+
+
+<!- 推送部分->
+<div id="right_article">
+
+	<!-文章标题部分->
+	<div id="article_head">
+    	<p style="display:block; margin-top:2px; margin-left:10px;">
+       		<font color="#FF6600" face="Tahoma, Geneva, sans-serif" style="font-size:20px">请登录</font>
+        </p>
+    </div>
+    
+    <!-推送的文章->
+    <div id="article" style=" margin-left:30px; margin-top:30px">
+    	
+    账号&nbsp;<input type="text" name="account" id="account" placeholder="用户名/手机号" style=" width:188px; height:25px"/>
+    <br/><br/>
+    密码&nbsp;<input type="password" name="pwd" id="pwd" placeholder="密码" style=" width:188px; height:25px"/>
+    <br/><br/>
+    &nbsp;&nbsp;&nbsp;<input type="button" name="login_btn" id="login_btn" value="登录" onclick="checkLogin()"/>&nbsp;&nbsp;&nbsp;
+    <input type="checkbox" name="login_checkbox" id="login_checkbox" value="记住我">记住我
+    </div>
+</div>
+
+</div>
+
+<div class="foot">
+	<div id="footer" align="center" style="margin-left:380px; margin-top:20px">
+	  <p class="foot_p" style="display:block; float:left; margin-top:10px; font-size: 10px; color: #CCC;">
+        &nbsp;&nbsp;&nbsp;&nbsp;网站内容来源于各大素材网站，最终解释权归网站管理员所有
+        </p>
+    </div>
+</div>
+<script type="text/javascript">
+	var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+<script type="text/jscript">
+	function checkLogin(){
+		var userAccount=document.getElementById("account").value;
+		var userPwd=document.getElementById("pwd").value;
+		if("zhou"==userAccount&&"123456"==userPwd){
+			alert('登录成功！');
+			self.location="index.html";
+		}else{
+			alert('登陆失败，请重新登录！');
+			self.location="login.html";
+		}
+	}
+</script>
+
+</body>
+</html>

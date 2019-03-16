@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link type="text/css"  rel="stylesheet"  href="css/style.css">
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+    list-style:none;
+	}
+.wrap{
+	height:270px;
+	width:600px;
+	margin-left:25px;
+	overflow: hidden;
+	position: relative;
+	margin-top:10px;
+	}
+.wrap ul{
+	position:absolute;
+	} 
+.wrap ul li{
+	height:270px;
+	}
+.wrap ol{
+	position:absolute;
+	right:5px;
+	bottom:10px;
+	}
+.wrap ol li{
+	height:20px; 
+	width: 20px;
+	background:#ccc;
+	border:solid 1px #666;
+	margin-left:5px;
+	color:#000;
+	float:left;
+	line-height:center;
+	text-align:center;
+	cursor:pointer;
+	}
+.wrap ol .on{
+	background:
+	#E97305;
+	color:#fff;
+	}
+ 
+</style>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script type="text/javascript">
+ window.onload=function(){
+ var wrap=document.getElementById('wrap'),
+ pic=document.getElementById('pic').getElementsByTagName("li"),
+ list=document.getElementById('list').getElementsByTagName('li'),
+ index=0,
+ timer=null;
+
+ timer = setInterval(autoPlay, 2000);
+
+ wrap.onmouseover = function () {
+ clearInterval(timer);
+ }
+
+ wrap.onmouseout = function () {
+ timer = setInterval(autoPlay, 2000);
+ }
+
+ for (var i = 0; i < list.length; i++) {
+ list[i].onmouseover = function () {
+ clearInterval(timer);
+ index = this.innerText - 1;
+ changePic(index);
+ };
+ };
+ 
+ function autoPlay () {
+ if (++index >= pic.length) index = 0;
+ changePic(index);
+ }
+ 
+
+ function changePic (curIndex) {
+ for (var i = 0; i < pic.length; ++i) {
+ pic[i].style.display = "none";
+ list[i].className = "";
+ }
+ pic[curIndex].style.display = "block";
+ list[curIndex].className = "on";
+ }
+ 
+ };
+ 
+ </script> 
+</head>
+<body>
+<!-头部区域 水平导航条->
+<div class="top">
+	<!-水平导航条->
+	<ul class="nav">
+		<li class="nav_list"><a id="a1" class="on" href="index.html">首&nbsp;&nbsp;页</a></li>
+		<li class="nav_list"><a id="a1" href="Fitness contrast.html">对比照展示</a></li>
+		<li class="nav_list"><a id="a1" href="contact.html">联系我们</a></li>
+       
+        <div id="login"><li class="nav_list"><a id="a1" href="login.html">登录</a></li></div>
+        <div id="register"><li class="nav_list"><a id="a1" href="register.html">注册</a></li></div>
+	</ul>
+</div>
+
+<!-左部内容区域  垂直导航条 图片 链接->
+<div class="content_left">
+
+<!-垂直导航条->
+<div class="left_nav" align="center">
+  <ul id="MenuBar1" class="MenuBarVertical">
+    <li><a id="a2"class="MenuBarItemSubmenu.html" href="#">力量训练</a>
+      <ul>
+        <li><a id="a2" href="shendun.html">深蹲</a></li>
+        <li><a id="a2" href="yingla.html">硬拉</a></li>
+        <li><a id="a2" href="wuotui.html">卧推</a></li>
+      </ul>
+    </li>
+    <li><a id="a2" href="yingyangbuchong.html">营养补充</a></li>
+    <li><a id="a2" class="MenuBarItemSubmenu.html" href="#">训练计划</a>
+      <ul>
+        <li><a id="a2" class="MenuBarItemSubmenu.html" href="#">胸部训练</a>
+          <ul>
+            <li><a id="a2" href="shangxiong.html">上胸</a></li>
+            <li><a id="a2" href="xiaxiong.html">下胸</a></li>
+          </ul>
+        </li>
+        <li><a id="a2" href="beibuxunlian.html">背部训练</a></li>
+        <li><a id="a2" href="tuibuxunlian.html">腿部训练</a></li>
+      </ul>
+    </li>
+    <li><a id="a2" href="#">~</a></li>
+  </ul>
+  </div>
+  
+  <!-图片->
+  <div class="left_img">
+  	<img src="images/idea1.jpg" alt="图文设计" style="width:180px;height:180px; display:block; margin-top:25px; margin-left:50px">
+  </div>
+  
+  <!-链接->
+  <div id="left_bottom" style="margin-top:15px;margin-left:75px"></div>
+</div>
+
+
+
+<!-中间内容部分->
+
+<div class="content">
+<h1><font size="30" color="red">硬拉</font></h1>
+<br /><br />
+硬拉是一种负重训练，主要分为屈腿硬拉（DeadLift）和直腿硬拉（Stiff-legged DeadLift），还有一些变种诸如罗马尼亚硬拉、相扑硬拉等，
+屈腿硬拉主要用于锻炼下背部即竖脊肌，直腿硬拉主要锻炼股二头肌，但也涉及臀部肌群、竖脊肌。
+传统意义上的硬拉是指屈腿硬拉，是世界力量举锦标赛的项目之一。
+<br /><br />
+<img src="images/7.jpg">
+<br /><br />
+<h1><font size="30" color="red">动作要领</font></h1>
+提高腰部力量的练习动作中，硬拉（DeadLift）无疑是最有效的动作。
+ 硬拉所用的是杠铃，曲柄和直柄杠铃都可以。传统硬拉即指屈腿硬拉，此外还有直腿硬拉，但屈腿硬拉锻炼重心更偏向于后腰竖脊肌。
+动作要领：
+1.双脚呈八字形站立，杠铃放体前，屈膝俯身，双手正握杠铃，握距约与肩宽或宽肩，头稍抬起，挺胸腰背绷紧，翘臀，上体前倾约45度。腿肌用力伸膝提铃，稍停。
+然后屈膝缓慢下降还原。为提高锻炼效果，屈膝下降杠铃时不让其触及地面
+2.拉到最高点时，双肩尽量外展，抬头挺胸，停滞3秒钟。还原，重复。
+注意事项：
+1.注意区别直腿硬拉和屈腿硬拉：屈腿硬拉是锻炼后腰的最好办法，直腿硬拉则主要锻炼大腿股二头肌。
+2.动作平稳，提杠铃时不能含胸弓腰，抬头、腰背要绷紧，上体始终保持张紧状态，否则容易损伤腰椎；提拉杠铃至极限时腰背不要后仰，意念要始终在后背部。
+3.身体重心问题是硬拉容易出现的错误，往往为省力把重心向后移，这样臀部和大腿后侧肌群就会参与更多的运动，分担腰部承受力，也就变成了练习腿部的动作。
+所以一定要将重心移到腰部，身体稍向前探身，直到感觉腰部产生压力为止。
+4.腿部幅度：腿部不要过于伸直或弯曲，过于伸直就只锻炼大腿后侧，过于弯曲，就成了蹲起，只会锻炼到腿部。具体弯曲程度没有特定标准，一般做到腿部稍屈，腰部感觉明显就可以了。
+5.双脚距离：开始锻炼时双脚与髋同宽就可，随着训练水平提高，重量增加，双脚也可打开一点，这样能减少腰部的压力，做起更重的重量，刺激更深层的肌肉。
+6.握法说明：过去许多健美运动员都采用一正一反的握法，现在倾向于双手正握，因为正握能更好地控制杠铃使身体平稳，而一正一反会引起杠铃转动，躯干也会跟着扭转，容易引起腰部损伤。
+
+<img src="images/8.jpg">
+</pre>
+</body>
+
+<!-右部内容区域 搜索部分 推送的新闻 文章标题 推送的文章->
+<div class="content_right">
+
+<!-搜索部分->
+<div id="right_search">
+	<input type="text" name="searchText" placeholder="别说话  搜我"/>
+    <input type="button" name="searchBtn"  value="     " style="background:url(images/idea3.PNG)" />
+</div>
+
+
+<!- 推送部分->
+<div id="right_article">
+
+	<!-文章标题部分->
+	<div id="article_head">
+    	<p style="display:block; margin-top:5px; margin-left:10px;">
+       		<font color="#FF6600" face="Tahoma, Geneva, sans-serif">健身小知识</font>
+        </p>
+    </div>
+    
+    <!-推送的文章->
+     <div id="article">
+    	<ul id="article_list">
+        	<li id="article_li"><font color="#000000"><a href="shendundehaochu.html">深蹲的好处有哪些？</a></font></li>
+            <li id="article_li"><font color="#000000"><a href="youyang.html">有氧和无氧的区别</a></font></li>
+            <li id="article_li"><font color="#000000"><a href="jianshenyingyangxue.html">健身营养学</a></font></li>
+            <li id="article_li"><font color="#000000">肌肉解刨学</font></li>
+            <li id="article_li"><font color="#000000">拉伸的重要性</font></li>
+        </ul>
+</div>
+
+</div>
+
+<div class="foot">
+	<div id="footer" align="center" style="margin-left:380px; margin-top:20px">
+	  <p class="foot_p" style="display:block; float:left; margin-top:10px; font-size: 10px; color: #999;">
+        &nbsp;&nbsp;&nbsp;&nbsp;网站内容来源于各大素材网站，最终解释权归网站管理员所有
+        </p>
+    </div>
+</div>
+<script type="text/javascript">
+	var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>
