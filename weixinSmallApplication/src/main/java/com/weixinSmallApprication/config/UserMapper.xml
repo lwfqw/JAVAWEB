@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.weixinSmallApprication.config.UserMapper">
+    <resultMap id="resoultmap" type="com.weixinSmallApprication.pojo.User">
+       <id property="nick" column="nickName" javaType="java.lang.String"></id>
+        <result property="tel" column="tel" javaType="java.lang.String"></result>
+        <result property="graduate" column="graduate" javaType="java.lang.String"></result>
+    </resultMap>
+     <select id="selectByTel" parameterType="java.lang.String" resultMap="resoultmap">
+         select * from user where tel=#{tel};
+     </select>
+    <select id="selectAll" resultMap="resoultmap">
+        select * from user;
+    </select>
+    <insert id="insertOne" parameterType="com.weixinSmallApprication.pojo.User">
+        insert into user values (#{nick},#{tel},#{graduate});
+    </insert>
+    <delete id="deliteByTel" parameterType="java.lang.String">
+        delete from user where tel=#{tell};
+    </delete>
+</mapper>
