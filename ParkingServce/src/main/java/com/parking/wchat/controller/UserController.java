@@ -44,15 +44,17 @@ public class UserController {
     ParkMapper parkMapper;
     @Autowired
     ParkinglotMapper parkinglotMapper;
-@RequestMapping( "/hello")
+@RequestMapping( "/hello")//测试控制器能否访问，对项目没啥影响
     String say() {
     return "hello";
 }
+/**    
 @RequestMapping(value = "/login",method = RequestMethod.GET)//管理员登录
     String login(String id,String password){
     String message=adminerServce.login(id,password);
     return "{'message':"+message+"}";
 }
+*/
 @RequestMapping("/write")//用户写入数据库
    void writeUser(User user){
     userMapper.insertOne(user.getwChatId(),user.getCarno());
