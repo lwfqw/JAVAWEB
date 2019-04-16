@@ -13,7 +13,11 @@ public interface UserMapper {
 @Insert("insert into user(wchatno,carno) values(#{wchatno},#{carno})")
     void insertOne(String wchatno,String carno);//插入绑定的用户
 @Select("select * from user where wchatno=#{wchatno}")
+@Results({@Result(column = "wchatno",property = "wChatId"),
+@Result(column = "carno", property = "carno")})    
     User lookInformation(@Param("wchatno") String wchatno);//查询绑定的用户
 @Select("select * from user")
+@Results({@Result(column = "carno", property = "carno"),
+@Result(column = "wchatno",property = "wChatId")})    
     List<User>  getAllUser();//管理员查询所有用户
 }
