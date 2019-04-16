@@ -17,4 +17,7 @@
     <insert id="insertOne" parameterType="com.weixinSmallApprication.pojo.User">
         insert into user values (#{nick},#{tel},#{graduate});
     </insert>
+    <delete id="deliteByTel" parameterType="java.lang.String">
+        delete from user where tel=#{tell};
+    </delete>
 </mapper>

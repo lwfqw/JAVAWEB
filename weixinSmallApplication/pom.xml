@@ -59,6 +59,46 @@
       <artifactId>mybatis-spring</artifactId>
       <version>3.4.4</version>
     </dependency>
+      <dependency>
+          <groupId>org.apache.ibatis</groupId>
+          <artifactId>ibatis-core</artifactId>
+          <version>3.0</version>
+      </dependency>
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>3.4.4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>3.4.4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.ibatis</groupId>
+      <artifactId>ibatis-core</artifactId>
+      <version>3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.ibatis</groupId>
+      <artifactId>ibatis-core</artifactId>
+      <version>3.0</version>
+    </dependency>
+      <dependency>
+          <groupId>org.apache.ibatis</groupId>
+          <artifactId>ibatis-core</artifactId>
+          <version>3.0</version>
+      </dependency>
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>3.4.4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.ibatis</groupId>
+      <artifactId>ibatis-core</artifactId>
+      <version>3.0</version>
+    </dependency>
     <!-- servlet依赖的jar包start -->
     <!-- jsp依赖jar包start -->
 
