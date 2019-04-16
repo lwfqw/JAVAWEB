@@ -62,7 +62,7 @@ public class AdminerController {
     void addPl(Parkinglot parkinglot){
     parkinglotMapper.insertPl(parkinglot);
 }
-@RequestMapping("/changeState")
+@RequestMapping("/changeState")//改变停车场状态，比如将华东交大1停车场轻松状态改为紧张
     void changeState(String plstate,String plname){
     parkinglotMapper.changePlstate(plstate,plname);
 }
