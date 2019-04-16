@@ -42,6 +42,11 @@ public class AdminerController {
     ParkMapper parkMapper;
     @Autowired
     ParkinglotMapper parkinglotMapper;
+@RequestMapping(value = "/login",method = RequestMethod.GET)//管理员登录
+    String login(String id,String password){
+    String message=adminerServce.login(id,password);
+    return "{'message':"+message+"}";
+}   
 @RequestMapping("/getAllPark")//得到所有停车信息
     List<Park> getAllPark(){
     return parkMapper.getAllPark();
